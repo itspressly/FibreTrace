@@ -1,0 +1,16 @@
+scenario_name,predicted_fault_domain,number_of_site_results
+congestion,Healthy,1
+congestion,Performance degradation,1
+customer_lan_failure,Customer LAN / CPE,1
+customer_lan_failure,Healthy,1
+dns_failure,DNS,2
+fno_access_failure,FNO access,1
+fno_access_failure,Healthy,1
+fno_backhaul_failure,FNO backhaul / ISP handoff,1
+fno_backhaul_failure,Healthy,1
+global_web_failure,Global web application,2
+isp_core_failure,ISP core,2
+ixp_failure,IXP peering / local content path,2
+local_web_failure,Local web application,2
+normal,Healthy,2
+transit_failure,Upstream transit,2

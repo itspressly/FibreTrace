@@ -1,0 +1,23 @@
+timestamp,data_source,scenario_id,scenario_name,site_id,sample_number,expected_fault_domain,customer_gateway_reachable,fno_access_reachable,isp_edge_reachable,isp_core_reachable,dns_server_reachable,dns_resolution_ok,local_web_ping_ok,local_web_http_ip_ok,local_web_http_name_ok,global_web_ping_ok,global_web_http_ip_ok,global_web_http_name_ok,customer_gateway_latency_ms,fno_access_latency_ms,isp_edge_latency_ms,isp_core_latency_ms,local_web_latency_ms,global_web_latency_ms,packet_loss_pct,jitter_ms,predicted_fault_domain
+2026-01-02T00:29:00+00:00,SYNTHETIC,FT-001,normal,SITE_B,30,Healthy,1,1,1,1,1,1,1,1,1,1,1,1,1.85,7.94,14.21,12.11,26.39,46.74,0.32,0.59,Healthy
+2026-01-02T00:29:00+00:00,SYNTHETIC,FT-001,normal,SITE_A,30,Healthy,1,1,1,1,1,1,1,1,1,1,1,1,2.16,7.21,10.54,13.04,16.41,48.7,0.47,2.46,Healthy
+2026-01-03T00:29:00+00:00,SYNTHETIC,FT-002,customer_lan_failure,SITE_B,30,Healthy,1,1,1,1,1,1,1,1,1,1,1,1,2.17,4.22,12.17,13.33,19.88,63.45,0.32,0.7,Healthy
+2026-01-03T00:29:00+00:00,SYNTHETIC,FT-002,customer_lan_failure,SITE_A,30,Customer LAN / CPE,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,0.43,1.67,Customer LAN / CPE
+2026-01-04T00:29:00+00:00,SYNTHETIC,FT-003,fno_access_failure,SITE_B,30,Healthy,1,1,1,1,1,1,1,1,1,1,1,1,2.4,6.18,10.69,18.68,31.32,53.96,0.55,1.75,Healthy
+2026-01-04T00:29:00+00:00,SYNTHETIC,FT-003,fno_access_failure,SITE_A,30,FNO access,1,0,0,0,0,0,0,0,0,0,0,0,2.21,,,,,,0.13,0.91,FNO access
+2026-01-05T00:29:00+00:00,SYNTHETIC,FT-004,fno_backhaul_failure,SITE_A,30,FNO backhaul / ISP handoff,1,1,0,0,0,0,0,0,0,0,0,0,1.09,3.75,,,,,0.1,0.77,FNO backhaul / ISP handoff
+2026-01-05T00:29:00+00:00,SYNTHETIC,FT-004,fno_backhaul_failure,SITE_B,30,Healthy,1,1,1,1,1,1,1,1,1,1,1,1,1.95,5.6,14.93,14.66,34.2,50.73,0.06,2.56,Healthy
+2026-01-06T00:29:00+00:00,SYNTHETIC,FT-005,isp_core_failure,SITE_B,30,ISP core,1,1,1,0,0,0,0,0,0,0,0,0,2.55,6.63,15.42,,,,0.3,1.92,ISP core
+2026-01-06T00:29:00+00:00,SYNTHETIC,FT-005,isp_core_failure,SITE_A,30,ISP core,1,1,1,0,0,0,0,0,0,0,0,0,2.68,6.51,12.39,,,,0.2,0.96,ISP core
+2026-01-07T00:29:00+00:00,SYNTHETIC,FT-006,ixp_failure,SITE_B,30,IXP peering / local content path,1,1,1,1,1,1,0,0,0,1,1,1,1.85,4.78,12.67,15.16,,53.85,0.36,1.63,IXP peering / local content path
+2026-01-07T00:29:00+00:00,SYNTHETIC,FT-006,ixp_failure,SITE_A,30,IXP peering / local content path,1,1,1,1,1,1,0,0,0,1,1,1,1.86,5.76,10.53,16.46,,51.91,0.89,1.72,IXP peering / local content path
+2026-01-08T00:29:00+00:00,SYNTHETIC,FT-007,transit_failure,SITE_B,30,Upstream transit,1,1,1,1,1,1,1,1,1,0,0,0,1.58,8.16,12.94,17.14,18.57,,0.8,2.16,Upstream transit
+2026-01-08T00:29:00+00:00,SYNTHETIC,FT-007,transit_failure,SITE_A,30,Upstream transit,1,1,1,1,1,1,1,1,1,0,0,0,1.23,5.48,13.37,13.16,18.56,,0.83,2.3,Upstream transit
+2026-01-09T00:29:00+00:00,SYNTHETIC,FT-008,dns_failure,SITE_B,30,DNS,1,1,1,1,1,0,1,1,0,1,1,0,2.09,5.71,12.01,15.77,26.74,66.61,0.76,2.61,DNS
+2026-01-09T00:29:00+00:00,SYNTHETIC,FT-008,dns_failure,SITE_A,30,DNS,1,1,1,1,1,0,1,1,0,1,1,0,2.92,7.92,8.67,22.48,21.34,57.85,0.13,0.87,DNS
+2026-01-10T00:29:00+00:00,SYNTHETIC,FT-009,local_web_failure,SITE_B,30,Local web application,1,1,1,1,1,1,1,0,0,1,1,1,2.43,5.19,12.35,16.06,24.38,53.24,0.62,1.19,Local web application
+2026-01-10T00:29:00+00:00,SYNTHETIC,FT-009,local_web_failure,SITE_A,30,Local web application,1,1,1,1,1,1,1,0,0,1,1,1,2.28,8.06,13.88,17.93,37.35,54.13,0.42,0.53,Local web application
+2026-01-11T00:29:00+00:00,SYNTHETIC,FT-010,global_web_failure,SITE_B,30,Global web application,1,1,1,1,1,1,1,1,1,1,0,0,1.84,6.01,12.39,16.09,19.57,37.66,0.32,2.57,Global web application
+2026-01-11T00:29:00+00:00,SYNTHETIC,FT-010,global_web_failure,SITE_A,30,Global web application,1,1,1,1,1,1,1,1,1,1,0,0,1.96,4.11,12.75,9.44,21.22,60.81,0.32,1.91,Global web application
+2026-01-12T00:29:00+00:00,SYNTHETIC,FT-011,congestion,SITE_A,30,Performance degradation,1,1,1,1,1,1,1,1,1,1,1,1,2.49,4.26,14.24,152.09,23.52,52.33,5.07,19.52,Performance degradation
+2026-01-12T00:29:00+00:00,SYNTHETIC,FT-011,congestion,SITE_B,30,Healthy,1,1,1,1,1,1,1,1,1,1,1,1,2.16,4.63,11.04,8.54,25.96,46.0,0.18,1.33,Healthy
